@@ -1,9 +1,3 @@
-/*  ____ _____  */
-/* |  _ \_   _|  Derek Taylor (DistroTube) */
-/* | | | || |  	http://www.youtube.com/c/DistroTube */
-/* | |_| || |  	http://www.gitlab.com/dtos/etc/dtos-distrotube */
-/* |____/ |_|  	*/
-
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
