@@ -1,9 +1,3 @@
-/*  ____ _____  */
-/* |  _ \_   _|  Derek Taylor (DistroTube) */
-/* | | | || |  	http://www.youtube.com/c/DistroTube */
-/* | |_| || |  	http://www.gitlab.com/dtos/etc/dtos-distrotube */
-/* |____/ |_|  	*/
-
 /* See LICENSE file for copyright and license details. */
 
 /* appearance */
@@ -96,8 +90,8 @@ static const char *termcmd[]    = { "alacritty", NULL };
 static const char *trayercmd[]  = { "trayer", "--edge", "top", "--align", "center", "--widthtype", "request", "--padding", "7", "--SetDockType", "true", "--SetPartialStrut", "false", "--expand", "true", "--monitor", "0", "--transparent", "true", "--alpha", "0", "--tint", "0x924441", "--height", "17", NULL };
 
 /* Control System Volume */
-static const char *upvol[]      = { "/usr/bin/amixer", "set", "Master", "5%+", NULL };
-static const char *downvol[]    = { "/usr/bin/amixer", "set", "Master", "5%-", NULL };
+/* static const char *upvol[]      = { "/usr/bin/amixer", "set", "Master", "5%+", NULL }; */
+/* static const char *downvol[]    = { "/usr/bin/amixer", "set", "Master", "5%-", NULL }; */
 static const char *mutevol[]    = { "/usr/bin/amixer", "set", "Master", "toggle", NULL };
 
 /* Control Media Players */
@@ -190,8 +184,8 @@ static Keychord keychords[] = {
 	{1, {{MODKEY|ShiftMask, XK_q}},		  quit,           {0} },
 
     /* Keybindings for Volume Control  */
-	{1, {{0, XF86XK_AudioRaiseVolume}},         spawn,         {.v = upvol   } },
-    {1, {{0, XF86XK_AudioLowerVolume}},         spawn,         {.v = downvol } },
+	{1, {{0, XF86XK_AudioRaiseVolume}},         spawn,         SHCMD("amixer set Master 5%+; kill -44 $(pidof dwmblocks)") },
+    {1, {{0, XF86XK_AudioLowerVolume}},         spawn,         SHCMD("amixer set Master 5%-; kill -44 $(pidof dwmblocks)") },
 	{1, {{0, XF86XK_AudioMute}},                spawn,         {.v = mutevol } },
 
     /* Keybindings for Media play/pause/next/previous */
