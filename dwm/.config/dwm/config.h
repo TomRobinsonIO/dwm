@@ -72,7 +72,7 @@ static const Layout layouts[] = {
 };
 
 /* key definitions */
-#define MODKEY Mod4Mask
+#define MODKEY  Mod4Mask
 
 #define TAGKEYS(KEY,TAG)												\
 	{1, {{MODKEY, KEY}},								view,           {.ui = 1 << TAG} },	\
@@ -104,6 +104,7 @@ static Keychord keychords[] = {
 	/* {1, {{MODKEY, XK_space}},            spawn,           {.v = dmenucmd } }, */
 	{1, {{MODKEY, XK_Return}},			 spawn,           {.v = termcmd } },
 	{1, {{MODKEY|ShiftMask, XK_c}},		 killclient,      {0} },
+	{1, {{Mod1Mask, XK_w}},		         killclient,      {0} },
 
 	/* Dmenu scripts launched with emacs-style keychords SUPER + p followed by "key" */
 	{2, {{MODKEY, XK_p}, {0, XK_h}},      spawn,          SHCMD("dm-hub") },
