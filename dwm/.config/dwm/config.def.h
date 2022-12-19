@@ -52,7 +52,8 @@ static const Rule rules[] = {
 	 */
 	/* class      instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",     NULL,       NULL,       0,            1,           -1 },
-	{ "Firefox",  NULL,       NULL,       1 << 8,       0,           -1 },
+	/* { "Brave",  NULL,       NULL,       1 << 8,       0,           -1 }, */
+	{ "Cider",  NULL,       NULL,       1 << 4,       0,           -1 },
 };
 
 /* layout(s) */
@@ -132,7 +133,7 @@ static Keychord keychords[] = {
 	/* {2, {{MODKEY, XK_e}, {0, XK_w}},      spawn,          SHCMD("emacsclient -c -a 'emacs' --eval '(doom/window-maximize-buffer(eww \"distro.tube\"))'") }, */
 
     /* Web browsers */
-    {1, {{MODKEY, XK_b}},                 spawn,          SHCMD("firefox") },
+    {1, {{MODKEY, XK_b}},                 spawn,          SHCMD("brave") },
 
 	/* System tray */
     {1, {{MODKEY, XK_semicolon}},           spawn,        {.v = trayercmd } },
