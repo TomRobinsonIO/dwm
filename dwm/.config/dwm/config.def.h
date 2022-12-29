@@ -17,10 +17,10 @@ static const char *fonts[]     = {"JetBrainsMono Nerd Font:weight=bold:size=8:an
                                   "JoyPixels:size=10:antialias=true:autohint=true"
 						     	};
 static const char col_1[]  = "#181825"; /* background color of bar */
-static const char col_2[]  = "#b4befe"; /* border color unfocused windows */
+static const char col_2[]  = "#585b70"; /* border color unfocused windows */
 static const char col_3[]  = "#cdd6f4"; /* text color */
 static const char col_4[]  = "#313244"; /* border color tags */
-static const char col_5[]  = "#f5e0dc"; /* border color focused windows */
+static const char col_5[]  = "#b4befe"; /* border color focused windows */
 /* bar opacity
  * 0xff is no transparency.
  * 0xee adds wee bit of transparency.
@@ -110,7 +110,8 @@ static Keychord keychords[] = {
 	/* Dmenu scripts launched with emacs-style keychords SUPER + p followed by "key" */
 	{2, {{MODKEY, XK_p}, {0, XK_h}},      spawn,          SHCMD("dm-hub") },
 	{2, {{MODKEY, XK_p}, {0, XK_a}},      spawn,          SHCMD("dm-sounds") },
-	{2, {{MODKEY, XK_p}, {0, XK_b}},      spawn,          SHCMD("dm-setbg") },
+	{2, {{MODKEY, XK_p}, {0, XK_w}},      spawn,          SHCMD("dm-setbg") },
+	{2, {{MODKEY, XK_p}, {0, XK_b}},      spawn,          SHCMD("dmenu_bw") },
 	{2, {{MODKEY, XK_p}, {0, XK_c}},      spawn,          SHCMD("dtos-colorsheme") },
 	{2, {{MODKEY, XK_p}, {0, XK_e}},      spawn,          SHCMD("dm-confedit") },
 	{2, {{MODKEY, XK_p}, {0, XK_i}},      spawn,          SHCMD("dm-maim") },
