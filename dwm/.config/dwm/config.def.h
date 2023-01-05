@@ -12,8 +12,8 @@ static const int vertpadbar         = 8;        /* vertical padding for statusba
  * Otherwise, your default font will be Hack (ttf-hack)
  * JoyPixels (ttf-joypixels) is a dependency for colored fonts and emojis.
  */
-static const char *fonts[]     = {"JetBrainsMono Nerd Font:weight=bold:size=8:antialias=true:hinting=true",
-                                  "Hack:size=8:antialias=true:autohint=true",
+static const char *fonts[]     = {"Hack Nerd Font:size=8:antialias=true:autohint=true",
+                                  "JetBrainsMono Nerd Font:weight=bold:size=8:antialias=true:hinting=true",
                                   "JoyPixels:size=10:antialias=true:autohint=true"
 						     	};
 static const char col_1[]  = "#181825"; /* background color of bar */
