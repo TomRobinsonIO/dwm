@@ -88,7 +88,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[]   = { "dmenu_run", NULL };
 static const char *termcmd[]    = { "alacritty", NULL };
-static const char *trayercmd[]  = { "trayer", "--edge", "top", "--align", "center", "--widthtype", "request", "--padding", "7", "--SetDockType", "true", "--SetPartialStrut", "false", "--expand", "true", "--monitor", "0", "--transparent", "true", "--alpha", "0", "--tint", "0x924441", "--height", "17", NULL };
+static const char *trayercmd[]  = { "trayer", "--edge", "top", "--align", "center", "--widthtype", "request", "--padding", "7", "--SetDockType", "true", "--SetPartialStrut", "false", "--expand", "true", "--monitor", "0", "--transparent", "true", "--alpha", "0", "--tint", "0x181825", "--height", "17", NULL };
 
 /* Control System Volume */
 /* static const char *upvol[]      = { "/usr/bin/amixer", "set", "Master", "5%+", NULL }; */
